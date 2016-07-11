@@ -1,0 +1,60 @@
+shellinabox (2.14-7) unstable; urgency=medium
+
+  * [fix] autologin when latency is high.
+  * [new] ctrl-w is handled via browser modal.
+
+ --  <anil@office-Dell-System-Inspiron-N4110>  Wed, 24 Sep 2014 20:51:59 +0530
+
+shellinabox (2.14-6) unstable; urgency=low
+
+  * Change autologin to use URl params instead of window. variables.
+  * Previous method made it hard to use with iframes etc.
+
+ -- anil <anil.verve@gmail.com>  Wed, 16 Jul 2014 21:32:01 +0530
+
+shellinabox (2.14-5) unstable; urgency=low
+
+  * Enable auto-login.
+  * To set the username, set as follows: window.autologinuser = "ubuntu"
+  * To set password (optional), set as follows: window.autologinpassword = "abc123"
+  * Default pause between these is 2 seconds. To change set (eg 5 seconds): 
+     window.autologinpasswordpause = 5000
+
+ -- anil <anil.verve@gmail.com>  Tue, 15 Jul 2014 19:42:45 +0530
+
+shellinabox (2.14-4) unstable; urgency=low
+
+  * Bug fixes for latest chrome and firefox.
+
+ -- anil <anil.verve@gmail.com>  Mon, 07 Jul 2014 19:21:04 +0530
+
+shellinabox (2.14-1) unstable; urgency=low
+
+  * Revised install target of debian/rules.
+  * Revised postrm and prerm to fix dangling symlinks on
+    purge. (Closes: #668720.)
+
+ -- Marc Singer <elf@debian.org>  Sat, 21 Apr 2012 10:26:21 -0700
+
+shellinabox (2.13-1) unstable; urgency=low
+
+  * Typo in web address.  (Closes: #668130.)
+  * Removing PATH_MAX reference which should fix Hurd build.
+
+ -- Marc Singer <elf@buici.com>  Mon, 09 Apr 2012 18:34:17 -0700
+
+shellinabox (2.12-1) unstable; urgency=low
+
+  * Moved libssl from a dependency to a recommended package using a helper
+    progam.  Fixed typo in dependency to lsb-base. (Closes: #667938.)
+  * Added support for runtime naming of the libssl so library.
+
+ -- Marc Singer <elf@debian.org>  Sat, 07 Apr 2012 15:39:11 -0700
+
+shellinabox (2.11-1) unstable; urgency=low
+
+  * First release into archive. (Closes: #535905.)
+  * Applied patches from the issues database.
+  * Rolled major revision so that the tarball is complete.
+
+ -- Marc Singer <elf@debian.org>  Sat, 07 Apr 2012 15:01:11 -0700
